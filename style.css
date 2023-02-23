@@ -1,0 +1,292 @@
+/*
+font-family: 'Palanquin', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-heting: 'Staatliches', cursive;
+    --ff-paragrafo: 'Palanquin', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: #e2dce7;
+
+    font-family: var( --ff-heting);
+}
+
+.page {
+    text-align: center;
+   
+}
+
+
+header {
+    min-width: 38.3rem;
+    height: 27.9rem;
+
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+
+    letter-spacing: 0.03em;
+
+    background: #8E9AAF;
+}
+
+
+header img {
+    min-width: 13.7rem;
+    margin: 1.0rem 0 1.0rem;
+}   
+
+header h1 {
+    background: #CBC0D3;
+    padding: 1.2rem;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.349);
+}
+
+main {
+    width: 38.4rem;
+   
+    background: #c2c9f3;
+    display: grid;
+    gap: 3.6rem;
+}
+
+main p {
+    font-family: var(--ff-paragrafo);
+    color: #23053A;
+    background: rgb(226, 225, 225);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    
+    text-align: center;
+
+    padding: 2rem;
+    }
+
+.sorvete {
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+
+    background-color: #ffffff;
+    color: #4A4E69;
+
+    font-family: Staatliches;
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    border-radius: 2.5rem;
+    padding: 0.5rem 3rem 0;
+
+    animation: massa 1s backwards 0.3s;
+}
+
+.real {
+    display: grid;
+    gap: 20px;
+    
+    
+    animation: sorvete 1s;
+}
+
+ .sorvete img {
+    transition: ease 0.8s;
+   
+}
+
+ .sorvete img:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+
+@media (min-width: 700px) {
+
+    .page {
+        
+        height: 72.0rem;
+        max-width: 128.0rem;
+       display: flex;
+
+    }
+
+    header {
+        background-image: url(./logo/logo\ 1.svg);
+        background-repeat: no-repeat ;
+        background-position: top;
+       
+    }
+
+    header img {
+        opacity: 0;
+
+    }
+
+      h1 {
+        font-family: 'Staatliches';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 34px;      
+    }
+
+    .sorvete h2 {
+        opacity: 0;
+    }
+
+    .cabeça {
+        width: 38.3rem;
+        height: auto;
+        
+        background: #8E9AAF
+    }
+
+   main p{
+        max-width: 38.3rem;
+        height: 100%;
+        font-family: 'Roboto';
+        font-style: normal;
+         font-weight: 400;
+         font-size: 2.4rem;
+        line-height: 2.2rem;
+       
+        
+         display: flex;
+         align-items: center;
+        text-align: center;
+
+          color: #FFFFFF;
+          background: #8E9AAF
+    }
+
+    .sorvete img {
+        width: 22.0rem;
+        height: 35.0rem;
+    }
+
+    #sorvete {
+        margin-top: 198px;
+
+    }
+
+    .sorvete .small {
+        height: 15.0rem;
+    }
+
+   .page .real {
+        
+        padding: 49px 96px 50px;
+        
+        display: grid;
+         grid-template-columns:1fr 5fr 1fr;
+         grid-template-rows:27vh ;
+         grid-template-areas: 'A B C '
+         'D E F'; 
+         }
+     
+    .real div:nth-child(1) {
+        grid-template-columns: A;
+       
+    }
+
+    .real div:nth-child(2) {
+        grid-template-columns: B;
+        
+    }
+
+    .real div:nth-child(3) {
+        grid-template-columns: C;
+       
+    }
+
+    .real div:nth-child(4) {
+        grid-template-columns: D;
+        
+    }
+
+    .real div:nth-child(5) {
+        grid-template-columns: E;
+    }
+
+    .real div:nth-child(6) {
+        grid-template-columns: F;
+    }
+
+
+    
+}
+
+footer {
+    font-family: Open Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+color: #4A4E69;                                                                 
+
+}
+
+footer span {
+    font-family: Open Sans;
+font-size: 14px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+color: #4A4E69;
+}
+
+
+
+
+@keyframes sorvete {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+   
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes massa {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
